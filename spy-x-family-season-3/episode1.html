@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Spy x Family Season 3 – Episode 01 | StreamHub Hindi</title>
-  <link rel="stylesheet" href="style-details.css" />
+
   <style>
     body {
       background: linear-gradient(to bottom right, #caf0f8, #ade8f4);
@@ -28,27 +28,27 @@
     }
 
     .logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-.logo img {
-  width: 60px;              /* Adjust size as needed */
-  height: 60px;
-  border-radius: 50%;       /* Makes it circular */
-  object-fit: cover;        /* Ensures it fills the circle */
-  background-color: white;  /* For white background if needed */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* Optional soft glow */
-}
+    .logo img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s;
+    }
 
-.logo:hover img {
-  transform: scale(1.05);
-}
-
+    .logo:hover img {
+      transform: scale(1.05);
+    }
 
     .site-title {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       font-weight: 700;
     }
 
@@ -67,36 +67,46 @@
 
     main {
       max-width: 900px;
-      margin: 40px auto;
+      margin: 30px auto;
       background: #ffffffcc;
       border-radius: 20px;
-      padding: 30px;
+      padding: 25px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     }
 
-    .episode-banner {
+    /* VIDEO PLAYER */
+    .video-wrapper {
+      position: relative;
       width: 100%;
-      border-radius: 15px;
+      padding-top: 56.25%;
+      border-radius: 18px;
       overflow: hidden;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
     }
 
     .episode-banner img {
       width: 100%;
-      height: auto;
-      display: block;
       border-radius: 15px;
+      margin-bottom: 20px;
     }
 
     h1 {
       font-size: 1.8rem;
-      color: #023e8a;
       margin-bottom: 10px;
     }
 
     .meta-info {
       display: flex;
-      gap: 10px;
+      gap: 8px;
       flex-wrap: wrap;
       margin-bottom: 20px;
     }
@@ -104,26 +114,34 @@
     .meta-info span {
       background: #0096c7;
       color: white;
-      padding: 5px 10px;
+      padding: 5px 12px;
       border-radius: 15px;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
     }
 
     .storyline {
+      line-height: 1.7;
       margin-bottom: 25px;
       color: #03045e;
-      line-height: 1.6;
     }
 
     .download-section h2 {
       color: #0077b6;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
+    }
+
+    .download-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
     }
 
     .download-buttons a {
-      display: inline-block;
-      margin: 5px;
-      padding: 10px 18px;
+      flex: 1;
+      min-width: 110px;
+      text-align: center;
+      padding: 10px;
       border-radius: 25px;
       text-decoration: none;
       color: white;
@@ -137,58 +155,105 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
+    .episode-nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .episode-nav a {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      border-radius: 20px;
+      background: #0077b6;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
       color: #004080;
       font-weight: 500;
     }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 15px;
+        padding: 20px;
+      }
+      .site-title {
+        font-size: 1.1rem;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <header class="site-header">
-    <div class="logo">
-      <img src="../logo.png" alt="StreamHub Hindi Logo" />
-      <h1 class="site-title">StreamHub Hindi</h1>
+
+<header class="site-header">
+  <div class="logo">
+    <img src="../logo.png" alt="StreamHub Hindi Logo">
+    <h1 class="site-title">StreamHub Hindi</h1>
+  </div>
+  <a href="spy-x-family-season-3.html" class="back-btn">← All Episodes</a>
+</header>
+
+<main>
+
+  <!-- VIDEO STREAM -->
+  <div class="video-wrapper">
+    <iframe
+      src="https://drive.google.com/file/d/1KFvBPfYQpRd1XZw8l9A9LaeX15LxJrEU/view?usp=sharing"
+      allow="autoplay; fullscreen"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <h1>Spy x Family Season 3 – Episode 01 (Hindi Dub)</h1>
+
+  <div class="meta-info">
+    <span>Action</span>
+    <span>Comedy</span>
+    <span>Drama</span>
+    <span>23 min</span>
+  </div>
+
+  <div class="storyline">
+    <p>
+      Spy x Family – Season 3 Episode 1: <b>“The New Mission”</b>.  
+      The Forger family embarks on a fresh mission filled with humor, danger, and emotional moments as their secret lives continue to collide.
+    </p>
+  </div>
+
+  <!-- DOWNLOAD -->
+  <div class="download-section">
+    <h2>Download Episode</h2>
+    <div class="download-buttons">
+      <a href="https://cuty.io/DcBkgP">480p</a>
+      <a href="https://cuty.io/a3D1v">720p</a>
+      <a href="https://cuty.io/dEAorN">1080p</a>
     </div>
-    <a href="https://streamhub-hindi.netlify.app/details/spy-x-family-season-3.html#download" class="back-btn">← All Episodes</a>
-  </header>
+  </div>
 
-  <main>
-    <div class="episode-banner">
-      <img src="spy-x-family-S3.jpg" alt="Spy x Family Season 3 Banner" />
-    </div>
+  <!-- EPISODE NAV -->
+  <div class="episode-nav">
+    <a href="#">⬅ Previous</a>
+    <a href="#">Next ➡</a>
+  </div>
 
-    <div class="download-section">
-      <h2>Download Links:</h2>
-      <div class="download-buttons">
-        <a href="https://cuty.io/DcBkgP">480p</a>
-        <a href="https://cuty.io/a3D1v">720p</a>
-        <a href="https://cuty.io/dEAorN">1080p</a>
-      </div>
-    </div>
+</main>
 
-    <h1>Spy x Family Season 3 – Episode 01 (Hindi Dub)</h1>
-    <div class="meta-info">
-      <span>Genre: Action</span>
-      <span>Comedy</span>
-      <span>Drama</span>
-      <span>Duration: 23min</span>
-    </div>
+<footer>
+  © 2025 StreamHub Hindi | All Rights Reserved
+</footer>
 
-    <div class="storyline">
-      <p>
-        Spy x Family – Season 3, Episode 1: “The New Mission”
-The Forger family embarks on a new mission filled with unexpected challenges and heartwarming moments as they continue to navigate their unique lives.
-      </p>
-    </div>
+<script>
+document.addEventListener("contextmenu", e => e.preventDefault());
+</script>
 
-    
-  </main>
-
-  <footer>
-    © 2025 StreamHub Hindi | All Rights Reserved
-  </footer>
 </body>
 </html>
