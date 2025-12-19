@@ -252,7 +252,17 @@
 
 <script>
 document.addEventListener("contextmenu", e => e.preventDefault());
+
+function playVideo(e) {
+  e.stopPropagation();
+
+  const iframe = document.getElementById("videoFrame");
+  document.querySelector(".video-poster").style.display = "none";
+  document.querySelector(".play-btn").style.display = "none";
+  iframe.style.display = "block";
+}
 </script>
+
 
 </body>
 </html>

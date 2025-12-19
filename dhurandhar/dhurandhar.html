@@ -226,7 +226,7 @@
     <div class="download-section">
       <h2>Download Links:</h2>
       <div class="download-buttons">
-        <a href="#">480p</a>
+        <a href="https://cuty.io/Eki1P8S">480p</a>
       </div>
     </div>
 
@@ -260,18 +260,18 @@
   </footer>
 
   <script>
+document.addEventListener("contextmenu", e => e.preventDefault());
+
 function playVideo(e) {
-  e.stopPropagation(); // VERY IMPORTANT
+  e.stopPropagation();
 
   const iframe = document.getElementById("videoFrame");
-  const poster = document.querySelector(".video-poster");
-  const playBtn = document.querySelector(".play-btn");
-
-  poster.style.display = "none";
-  playBtn.style.display = "none";
+  document.querySelector(".video-poster").style.display = "none";
+  document.querySelector(".play-btn").style.display = "none";
   iframe.style.display = "block";
 }
 </script>
+
 
 
 
